@@ -29,7 +29,7 @@ pipeline {
                         //docker build -t xxx/xxx:tag .
                         //docker tag xxx/xxx hrb/xxx/xxx:tag
                         //docker push hrb/xxx/xxx:tag
-                        echo pass
+                        echo "pass"
                     //}
                 }
             }

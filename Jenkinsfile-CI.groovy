@@ -13,7 +13,7 @@ pipeline {
                 script {
                     env.GIT_COMMIT = sh(script: "git rev-parse --short HEAD", returnStdout: true).trim()
                     env.GIT_COMMIT_SHORT = sh(script: "git log -1 --pretty=format:%h", returnStdout: true).trim()
-                    env.VERSION = env.branch + "-" +env.BUILD_NUMBER + "-" + env.GIT_COMMIT_SHORT
+                    env.VERSION = "master" + "-" +env.BUILD_NUMBER + "-" + env.GIT_COMMIT_SHORT
 
                 }
             }

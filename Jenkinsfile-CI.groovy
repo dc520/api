@@ -23,7 +23,7 @@ pipeline {
             steps {
                 script {
                     //Get hrb credentials id.
-                    //withCredentials([Skipdetection(credentialsId: 'hrb', usernameVariable: 'xx', passwordVariable: 'xx')]) {
+                    //withCredentials([Skipdetection(credentialsId: 'hrb', xxVariable: 'xx', xxVariable: 'xx')]) {
                         
                         //docker login -u ${xx} -p {xx} hrb
                         //docker build -t xxx/xxx:tag .

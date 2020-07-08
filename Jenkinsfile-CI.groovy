@@ -18,7 +18,16 @@ pipeline {
                 }
             }
         }
-    
+        stage('build code') {
+            steps {
+                script {
+                   //sh "pwd"
+                   //sh "mvn/ant install command"
+                   echo "pass"
+
+                }
+            }
+        }    
         stage('build image') {
             steps {
                 script {

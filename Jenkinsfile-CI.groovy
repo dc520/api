@@ -39,7 +39,7 @@ pipeline {
             steps {
                 script {
                     currentBuild.displayName = "${env.VERSION}"
-                    currentBuild.description = "${ARTIFACTORY_CN_URL}/${IMAGE_NAME}:${env.VERSION}"
+                    currentBuild.description = "hrb/xxx/api:${env.VERSION}"
                 }
             }
         }
